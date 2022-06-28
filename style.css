@@ -1,3 +1,253 @@
 * {
-   font-family: 'Nunito';
+   margin: 0;
+   font-family: "Nunito", sans-serif;
+   list-style: none;
 }
+
+a {
+   text-decoration: none;
+   color: inherit;
+}
+
+body {
+   height: 100%;
+   line-height: 1;
+   font-size: 16px;
+   color: #000;
+   background-color: #F2F2F2;
+}
+
+.wrapper {
+   min-height: 100%;
+   overflow: hidden;
+}
+
+.__container {
+   max-width: 957px;
+   margin: 0 auto;
+   padding: 0 15px;
+   box-sizing: content-box;
+}
+
+._ibg {
+   background-position: center;
+   background-size: cover;
+   background-repeat: no-repeat;
+   position: relative;
+}
+
+._ibg img {
+   position: absolute;
+   width: 100%;
+   height: 100%;
+   top: 0;
+   left: 0;
+   object-fit: cover;
+}
+
+/* ----------------HEADER---------------- */
+
+.header {
+   position: absolute;
+   width: 100%;  
+   z-index: 100;
+   margin: 75.64px auto auto auto;
+}
+
+.header-logo img:active {
+   opacity: .5;
+}
+
+/* ----------------MAIN-BLOCK---------------- */
+
+.main-background {
+   position: absolute;
+   margin: auto auto auto 30%;
+   display: flex;
+   flex-direction: row;
+   width: calc(100% - 30%);
+   position: relative;
+}
+
+.main-logo__img img {
+  max-height: 100vh;
+}
+
+.main-logo {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+.main-logo__button {
+   position: absolute;
+   z-index: 120;
+}
+
+.main-logo__button img:active {
+   opacity: .1;
+}
+
+.main-logo__button img:hover {
+   transition: 0.5s;
+   opacity: .7;
+}
+
+.main-background__menu {
+   background-color: rgba(65, 81, 103, 1);
+   min-height: 100vh;
+}
+
+.menu {
+   display: flex;
+   flex-direction: column;
+   width: 100%;
+}
+
+.menu__button {
+   padding-left: 40px;
+   margin: auto auto 118px auto;
+}
+
+.menu__button img:hover {
+   opacity: .6;
+   transition: 0.5s;
+}
+
+.menu__list {
+   position: relative;
+   z-index: 15000;
+   margin: 40px auto auto auto;
+}
+
+.menu__button a{
+   min-height: 40px;
+   min-width: 40px;
+}
+
+.menu-list__item {
+   color: rgba(237, 240, 245, 1);
+   font-size: 16px;
+   font-weight: 300;
+   line-height: 24px;
+   margin-bottom: 20px;
+}
+
+.menu-list__item p {
+   transition: all 0.3s ease ;
+}
+
+.menu-list__item:hover p {
+   font-size: 16px;
+   font-weight: 700;
+   line-height: 24px;
+   color: rgba(237, 240, 245, 1);
+   margin: auto auto auto 23px;
+}
+
+.menu-list__item:active {
+   opacity: .5;
+}
+
+.menu-list__item:hover {
+   transition: 3s;
+   opacity: .7;
+}
+
+.main-title__body {
+   z-index: 1700;
+   position: absolute;
+   margin-top: -280px;
+
+}
+
+.main-title__string {
+   font-family: 'Montserrat';
+   font-style: normal;
+   font-weight: 900;
+   font-size: 54px;
+   line-height: 70px;
+   color: rgba(65, 81, 103, 1);
+}
+
+.__selected {
+   padding: 15px;
+   background-color: rgba(199, 161, 122, 1);
+   color: rgba(249, 251, 255, 1);
+}
+
+#image:active {
+   max-width: 100%;
+   opacity: .5;
+ }
+
+.menu-list__item:first-child {
+   margin-bottom: 118px;
+ }
+
+ @media only screen and (max-width:600px) {
+   .main-background {
+      position: absolute;
+      margin: auto auto auto 60%;
+      display: flex;
+      flex-direction: column;
+      width: calc(100% - 60%);
+      position: relative;
+   }
+   
+   .main-logo__img img {
+      display: none;
+      
+   }
+
+   .main-logo__button img {
+      display: none;
+   }
+
+   .menu {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 100% ;
+   }
+   
+
+   .main-title__body {
+      z-index: 1700;
+      position: absolute;
+      margin-top: -150px;
+      margin-left: 20px;
+   
+   }
+
+   .main-title__string {
+      font-family: 'Montserrat';
+      font-style: normal;
+      font-weight: 900;
+      font-size: 35px;
+      line-height: 45px;
+      color: rgba(65, 81, 103, 1);
+   }
+   
+   .__selected {
+      padding: 5px;
+      background-color: rgba(199, 161, 122, 1);
+      color: rgba(249, 251, 255, 1);
+   }
+
+   .menu-list__item:first-child {
+      margin-bottom: 30px;
+    }
+
+    .header-logo img {
+      width: 110px;
+   }
+
+    .header {
+      position: absolute;
+      width: 00%;  
+      z-index: 100;
+      margin: 75.64px auto auto 100px;
+   }
+ }
+
