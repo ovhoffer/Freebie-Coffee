@@ -32,15 +32,16 @@
 
 .slider__item {
   flex: 0 0 33.3333%;
-  max-width: 536px;
+  max-width: 560px;
   user-select: none;
+ 
 }
 
 /* кнопки влево и вправо */
 
 .slider__control {
   position: absolute;
-  top: 47%;
+  top: 50%;
   display: flex;
   justify-content: center;
   align-items: center;
