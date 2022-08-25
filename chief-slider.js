@@ -49,11 +49,11 @@ class ChiefSlider {
     this._intervalId = null;
     // configuration of the slider
     this._config = {
-      loop: false,
+      loop: true,
       autoplay: false,
       interval: 5000,
       refresh: true,
-      swipe: true,
+      swipe: false,
     };
     this._config = Object.assign(this._config, config);
     // create some constants

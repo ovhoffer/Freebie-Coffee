@@ -36,5 +36,3 @@ SliderButtonsNode.forEach(function(Slide, i) {
         SliderButtonsNode[i].style.backgroundColor = 'rgba(255, 255, 255, 1)'
    });
 });
-
-   

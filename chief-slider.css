@@ -22,8 +22,8 @@
 
 .slider__items {
   display: flex;
-  transition: transform 0.5s ease;
-  
+  transition: transform 0.5s ease; 
+
 }
 
 .slider_disable-transition {
@@ -31,13 +31,11 @@
 }
 
 .slider__item {
-  flex: 0 0 33.3333%;
+  flex: 0 0 50%;
   max-width: 560px;
   user-select: none;
- 
+  padding: 0px 15px;
 }
-
-/* кнопки влево и вправо */
 
 .slider__control {
   position: absolute;
